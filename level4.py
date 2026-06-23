@@ -442,3 +442,123 @@
 #     if flag:
 #         print("Problem 30 Answer =", i)
 #         break
+
+# Question :Print the number of zeroes you encounter between the numbers 0 
+# to 1000
+
+# count = 0
+# for i in range(0,1000):
+#     count+=str(i).count('0')
+# print(count)
+
+# Total number of prime numbers below 1,000,000 have the sum of 
+# their digits equal to 14?
+# Output : 
+# Example: 59. 5 + 9 = 14
+# count = 0
+# for i in range(2,1000000):
+#     for j in range(2, int(i**0.5) + 1):
+#         if (i%j==0):
+#             break
+#     else:
+#         digit_sum = sum(int(digit) for digit in str(i))
+#         if digit_sum == 14:
+#             count += 1
+# print(count)
+
+# Question :Print the total number of non-decreasing numbers from 1000 to 
+# 9999.Non decreasing numbers have individual digits that do not have a 
+# decreasing order from left to right.
+# Output : 
+# (For e.g.: 1234 is a non-decreasing number 
+# where as 2134 is not)
+                
+# total = 0
+# for i in range(1000,10000):
+#     n = str(i)
+#     if n[0]<=n[1]<=n[2]<=n[3]:
+#         total+=1
+# print(total)
+
+# Question :Print the total number of all Palindrome numbers less than 
+# 100000.
+# Output : 
+# Example: 101,12321,656,99899,11511
+# count = 0
+# for i in range(10,100000):
+#     if str(i)==str(i)[::-1]:
+#         count+=1
+# print(count)   
+
+# Question :Get 2 numbers from user and find the LCM of them.
+# Output : 
+# Example: Input 20,30 Output:60
+
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+# def find_lcm(num1, num2):
+#     if num1 == 0 or num2 == 0:
+#         return 0
+#     greater = max(num1, num2)
+#     while True:
+#         if greater % num1 == 0 and greater % num2 == 0:
+#             return greater
+#         greater += 1
+# lcm = find_lcm(num1, num2)
+# print("The LCM of", num1, "and", num2, "is", lcm)
+
+
+# # Question :Get a character and print its ASCII Value.
+
+# ch = input("Enter a character: ")
+# print(ord(ch))
+
+# Question :Get a number and print its ASCII Value
+
+# num = int(input("Enter a number: "))
+# print(ord(str(num)))
+
+# Question :Get a String and print the same.
+# string = input("Enter a string: ")
+# print(string)
+
+# Question : Get a number as String and print the integer value of the string..
+# num_str = input("Enter num as string: ")
+# print(int(num_str))
+
+# Question :Get an integer and print it as string
+# num = int(input("Enter a number:"))
+# s = str(num)
+# print(s)
+# print(type(s))
+
+# Question :Get an integer and print each digit as character.
+# Print one character on one line.
+
+# num = int(input("Enter a number: "))
+# for i in str(num):
+#     print(i)
+
+# Question :Get a string and find the length of the string
+# st = input("Enter a string: ")
+# print(len(st)) 
+
+# Question :Get a string and find the length of the string
+# Output : 
+# E.g.: 1234567 → valid number
+# 12abc35 → Not a valid number
+
+# inp = input("Enter a value: ")
+# for i in inp:
+#     if i not in '0123456789':
+#         print("Not a valid number")
+#         break
+# else:
+#     print("Valid number")
+
+# Get a string of numbers up to 50 digits and remove all leading 
+# zeros.
+# Output : 
+# E.g.: 00000012345
+# Answer: 12345
+
